@@ -1,0 +1,92 @@
+
+
+<!--<button (click)="getWeather()">Get the weather</button>-->
+
+
+
+<!--<br/>-->
+<!--Current weather: <br/>-->
+<!--Temp: {{currentWeather.temperature | number:'3.5'}}-->
+<!--Pressure: {{currentWeather.pressure}}-->
+<!--Humidity : {{currentWeather.humidity}}-->
+<!--<hr/>-->
+<!--<button (click)="getWeather()">Get the weather</button>-->
+
+<!--Way 2: Simple FormControls-->
+<!--<br/>-->
+<!--[formControl] is really similar to [ngModel], adds validation etc-->
+<!--City: <input  [formControl]="cityControl2"> : {{city}}<br/>-->
+<!--Units: <input  [formControl]="unitsControl2" ><br/>-->
+<!--<button (click)="getWeatherByCityWay2()">Submit</button>-->
+<!--Errors: {{cityControl2.errors}}-->
+<!--Invalid: {{cityControl2.invalid}}-->
+<!--<div *nglf="cityControl2.invalid">-->
+<!--  Show an error message-->
+<!--</div>-->
+<!--<br/>-->
+
+<!--<div class="search">-->
+<!--  <form #form="ngForm" (submit)="onSubmit()">-->
+<!--    <input type="text" placeholder="Search city" name="city" [(ngModel)]="cityname">-->
+<!--  </form>-->
+<!--</div>-->
+
+<app-child [cityname] = "cityname"></app-child>
+
+
+
+
+
+
+<!--<div class="container" *ngif="weatherData">-->
+<!--  <div class="upper-data">-->
+
+<!--    <div class="weather-data">-->
+<!--      <div class="location">{{ weatherData.name }}</div>-->
+<!--      <div class="temperature">{{ weatherData.main.temp | number: '1.0-0'}}°C</div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+<!--&lt;!&ndash;  <div class="lower-data">&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="more-info-label">&ndash;&gt;-->
+<!--&lt;!&ndash;      More Information&ndash;&gt;-->
+<!--&lt;!&ndash;    </div>&ndash;&gt;-->
+<!--&lt;!&ndash;    <div class="more-info-container">&ndash;&gt;-->
+<!--&lt;!&ndash;      <div class="info-block">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="info-block-label">&ndash;&gt;-->
+<!--&lt;!&ndash;          <img src="../assets/min.png">&ndash;&gt;-->
+<!--&lt;!&ndash;          <span>min</span>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+
+<!--&lt;!&ndash;      <div class="info-block">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="info-block-label">&ndash;&gt;-->
+<!--&lt;!&ndash;          <img src="../assets/max.png">&ndash;&gt;-->
+<!--&lt;!&ndash;          <span>max</span>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="info-block-value">&ndash;&gt;-->
+<!--&lt;!&ndash;          {{weatherData.main.temp_max | number: '1.0-0'}}°C&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+
+<!--      <div class="info-block">-->
+<!--        <div class="info-block-label">-->
+<!--&lt;!&ndash;          <img src="../assets/humidity.png">&ndash;&gt;-->
+<!--          <span>humidity</span>-->
+<!--        </div>-->
+<!--        <div class="info-block-value">-->
+<!--          {{weatherData.main.humidity}}%-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--&lt;!&ndash;      <div class="info-block">&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="info-block-label">&ndash;&gt;-->
+<!--&lt;!&ndash;          <img src="../assets/wind.png">&ndash;&gt;-->
+<!--&lt;!&ndash;          <span>wind</span>&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;        <div class="info-block-value">&ndash;&gt;-->
+<!--&lt;!&ndash;          {{weatherData.wind.speed}} km/h&ndash;&gt;-->
+<!--&lt;!&ndash;        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;      </div>&ndash;&gt;-->
+<!--    </div>-->
+
